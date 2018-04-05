@@ -1,0 +1,58 @@
+.storage-action {
+  display: flex;
+  width: 100%;
+  height: 15%;
+}
+
+.storage-action__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33.333%;
+  cursor: pointer;
+  background: #776b5e;
+
+  &:first-child {
+    border-bottom-left-radius: 5px;
+  }
+
+  &:last-child {
+    border-bottom-right-radius: 5px;
+  }
+
+  &:hover {
+    background: #64584c;
+  }
+}
+
+.storage-action__item-share{
+    cursor: default;
+}
+
+.storage-action__item_theme {
+  @include text-style(11px);
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+.storage-action__icon {
+  background: url(../../storage-action/storage-action.png) no-repeat;
+  height: 23px;
+}
+
+.storage-action__icon_upload {
+  width: 31px;
+  background-position: -31px -105px;
+}
+
+.storage-action__icon_share {
+  width: 20px;
+  background-position: -36px -147px;
+}
+
+.storage-action__icon_backup {
+  width: 27px;
+  background-position: -90px -105px;
+}

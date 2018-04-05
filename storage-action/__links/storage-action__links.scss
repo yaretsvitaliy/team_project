@@ -1,0 +1,36 @@
+.storage-action__links {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.storage-action__links_icon {
+  display: flex;
+  width: 35%;
+  height: 40%;
+  background-image: url(../../storage-action/storage-action.png);
+  border-radius: 2px;
+}
+
+.storage-action__links_icon-twitter {
+  background-position: -27px -60px;
+  background-color: #39b9dc;
+}
+
+.storage-action__links_icon-facebook {
+  background-position: -22px -19px;
+  background-color: #4065b4;
+}
+
+.storage-action__links_icon-vk {
+  background-position: -88px -17px;
+  background-color: #4e759d;
+}
+
+.storage-action__links_icon-ok {
+  background-position: -88px -59px;
+  background-color: #fa8e12;
+}

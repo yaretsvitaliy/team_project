@@ -1,0 +1,21 @@
+{
+  "name": "teamproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "NodeJsServer.js",
+  "scripts": {
+    "sass": "node-sass styles/app.scss -o build/styles",
+    "min": "minify -o build/result.min.css build/styles/app.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "latest",
+    "raphael": "latest",
+    "reset-css": "latest"
+  },
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "minifier": "latest"
+  }
+}

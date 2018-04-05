@@ -1,0 +1,5 @@
+@mixin text-style($font_size, $font_weight: bold, $font_family: $app_font_family) {
+  font-size: $font_size;
+  font-weight: $font_weight;
+  font-family: $font_family;
+}

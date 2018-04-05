@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>teamProject</title>
+    <meta charset="utf-8"/>
+    <base target="_blank">
+    <!--css-->
+    <link rel="stylesheet" href="build/result.min.css">
+
+    <!--js-->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/raphael/raphael.min.js"></script>
+    <script src="storage-stats/storage-stats-morris.js"></script>
+    <script src="storage-tabs/storage-tabs.js"></script>
+    <script src="storage-stats/storage-stats.js"></script>
+    <script src="storage-action/storage-action.js"></script>
+</head>
+<body>
+<div class="storage-wrapper">
+    <div class="storage-info">
+        <ul class="storage-tabs">
+            <li class="storage-tabs__item storage-tabs__item_active">
+                <a href="#tab_one" class="storage-tabs__link">Diagram Stats</a>
+            </li>
+            <li class="storage-tabs__item">
+                <a href="#tab_two" class="storage-tabs__link">Month Report</a>
+            </li>
+        </ul>
+        <div id="tab_one" class="storage-stats display-flex">
+            <h2 class="storage-stats__h2">Data transfer</h2>
+            <div id="storage-stats__graph-diagram-stats" class="storage-stats__graph"></div>
+            <div class="storage-stats__legend">
+                <div class="storage-info__item-stats storage-info__item-stats_audio">
+                    <p class="storage-info__item-stats_key-fonts">audio</p>
+                    <p class="storage-info__item-stats_value-fonts" id="percent-audio"></p>
+                </div>
+                <div class="storage-info__item-stats storage-info__item-stats_video">
+                    <p class="storage-info__item-stats_key-fonts">video</p>
+                    <p class="storage-info__item-stats_value-fonts" id="percent-video"></p>
+                </div>
+                <div class="storage-info__item-stats storage-info__item-stats_photo">
+                    <p class="storage-info__item-stats_key-fonts">photo</p>
+                    <p class="storage-info__item-stats_value-fonts" id="percent-photo"></p>
+                </div>
+            </div>
+        </div>
+        <div id="tab_two" class="storage-stats display-none">
+            <h2 class="storage-stats__h2">Содержание второй вкладки</h2>
+        </div>
+    </div>
+    <div class="storage-action">
+        <label for="storage-action__files-upload" class="storage-action__item">
+            <div class="storage-action__icon storage-action__icon_upload"></div>
+            <div class="storage-action__item_theme">Upload files</div>
+        </label>
+        <input id="storage-action__files-upload" type="file" class="display-none"/>
+
+        <label for="storage-action__files-share" class="storage-action__item storage-action__item-share">
+            <div class="storage-action__icon storage-action__icon_share"></div>
+            <div class="storage-action__item_theme">Share link</div>
+            <div class="storage-action__links display-none">
+                <a href="https://www.twitter.com"
+                   class="storage-action__links_icon storage-action__links_icon-twitter"></a>
+                <a href="https://www.facebook.com"
+                   class="storage-action__links_icon storage-action__links_icon-facebook"></a>
+                <a href="https://www.vk.com" class="storage-action__links_icon storage-action__links_icon-vk"></a>
+                <a href="https://www.ok.ru" class="storage-action__links_icon storage-action__links_icon-ok"></a>
+            </div>
+        </label>
+        <input id="storage-action__files-share" type="button" class="display-none"/>
+
+        <label for="storage-action__files-backup" class="storage-action__item">
+            <div class="storage-action__icon storage-action__icon_backup"></div>
+            <div class="storage-action__item_theme">Back up</div>
+            <input id="storage-action__files-backup" type="button" class="display-none" onclick="messageBackUp()"/>
+        </label>
+    </div>
+</div>
+</body>
+</html>
