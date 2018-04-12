@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="build/result.min.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/Chart.bundle.min.js"></script>
+	<script src="js/chart.js"></script>
+	<script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU"></script>
+	<script src="js/date.js"></script>
+</head>
+<body>
+<div class="section-chart">
+
+
+
+	<div class="section-chart_graph">
+		<div class="section-chart_graph-info">
+			<div class="section-chart_graph-info_differiance"></div>
+			<div class="section-chart_graph-info_ratio"></div>
+		</div>
+		<div class='section-chart_graph-allblock'>
+			<canvas id="chart_line" class='section-chart_graph-allblock_line'></canvas>
+		</div>
+		<div class='section-chart_graph-halfblock'>
+			<canvas id="diagramm" class='section-chart_graph-halfblock_diagramm'></canvas>
+		</div>
+	</div>
+
+
+
+	<div class="section-chart_geolocation">
+		<div class="section-chart_geolocation-datetime"></div>
+		<div class="section-chart_geolocation-location"></div>
+	</div>
+
+
+
+	<div class="section-chart_information">
+		<div class="section-chart_information-sharestraded">
+			<div class="section-chart_information-sharestraded_summa"></div>
+			<div class="section-chart_information-sharestraded_summa-text">Shares Traded</div>
+		</div>
+		<div class="section-chart_information-marcetcup">
+			<div class="section-chart_information-marcetcup_market"></div>
+			<div class="section-chart_information-marcetcup_market_market-text">Market Cup</div>
+		</div>
+	</div>
+
+
+
+	<div class="section-chart_stock">
+		<div class="section-chart_stock-apple">
+			<div class="section-chart_stock-apple_name">aapl</div>
+			<canvas id="diagramm_apple" class='section-chart_stock-apple_diagramm'></canvas>
+		</div>
+		<div class="section-chart_stock-differiance">
+			<div class="section-chart_stock-differiance_apple-text">Yearly Change</div>
+			<div class="section-chart_stock-differiance_yearlychange">
+				<div class="section-chart_stock-differiance_yearlychange_summa"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="section-chart_modal-form">
+		<div class="section-chart_modal-form_modal_close"></div>
+		<input name="text" type="text">
+		<input type="submit" value="Применить">
+	</div>
+	<div class="section-chart_modal-form_overlay"></div>
+
+</div>
+
+
+</body>
+</html>
